@@ -1,4 +1,4 @@
-class ChangeRiskStatusMonitorToActive < ActiveRecord::Migration
+class ChangeRiskStatusMonitorToActive < ActiveRecord::Migration[4.2]
 
   def change
     risk_status = RiskStatus.find_by_name 'Monitored'

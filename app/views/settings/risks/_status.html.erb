@@ -12,7 +12,6 @@
       <th><%= t(:field_status) %></th>
       <th><%= t(:field_is_default) %></th>
       <th><%= t(:field_status_type) %></th>
-      <th><%= t(:button_sort) %></th>
       <th></th>
     </tr>
   </thead>
@@ -26,11 +25,6 @@
       </td>
       <td align='center' style='width:15%;'><%= checked_image risk_status.is_default? %></td>
       <td align='center' style='width:15%;'><%= risk_status.status_type %></td>
-      <td align="center" style="width:15%;">
-        <%= reorder_links 'risk_status',
-                          { controller: :risk_statuses, action: :update, id: risk_status },
-                          :put %>
-      </td>
       <td class='buttons'>
         <%= delete_link risk_status_path(risk_status) %>
       </td>

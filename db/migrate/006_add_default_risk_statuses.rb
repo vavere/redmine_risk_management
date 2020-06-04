@@ -1,4 +1,4 @@
-class AddDefaultRiskStatuses < ActiveRecord::Migration
+class AddDefaultRiskStatuses < ActiveRecord::Migration[4.2]
   def change
     risk_statuses = {
       'Identified' => { is_default: true, color: '3373751' },

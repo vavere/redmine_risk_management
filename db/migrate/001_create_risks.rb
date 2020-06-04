@@ -1,4 +1,4 @@
-class CreateRisks < ActiveRecord::Migration
+class CreateRisks < ActiveRecord::Migration[4.2]
   def change
     create_table :risks do |t|
       t.integer :number

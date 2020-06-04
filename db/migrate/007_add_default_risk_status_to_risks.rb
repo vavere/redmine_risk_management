@@ -1,4 +1,4 @@
-class AddDefaultRiskStatusToRisks < ActiveRecord::Migration
+class AddDefaultRiskStatusToRisks < ActiveRecord::Migration[4.2]
 
   def change
     default_risk_status = RiskStatus.default

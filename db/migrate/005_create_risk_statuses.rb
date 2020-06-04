@@ -1,4 +1,4 @@
-class CreateRiskStatuses < ActiveRecord::Migration
+class CreateRiskStatuses < ActiveRecord::Migration[4.2]
   def change
     create_table :risk_statuses do |t|
       t.string  :name

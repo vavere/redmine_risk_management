@@ -7,6 +7,7 @@ en:
   field_probability: Probability
   field_rationale: Rationale
   field_risk_status: Risk status
+  field_status: Statuss
   field_status_type: Status type
   field_title: Title
 

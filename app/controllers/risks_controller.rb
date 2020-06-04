@@ -1,9 +1,9 @@
 class RisksController < ApplicationController
   unloadable
 
-  before_filter :find_project_by_project_id
-  before_filter :find_risk, except: [:index, :new, :create]
-  before_filter :check_project_permission
+  before_action :find_project_by_project_id
+  before_action :find_risk, except: [:index, :new, :create]
+  before_action :check_project_permission
 
   def index
     @query = Risk.includes(:issues, :risk_status)

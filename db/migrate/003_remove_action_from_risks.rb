@@ -1,4 +1,4 @@
-class RemoveActionFromRisks < ActiveRecord::Migration
+class RemoveActionFromRisks < ActiveRecord::Migration[4.2]
   def self.up
     remove_column :risks, :action
   end
